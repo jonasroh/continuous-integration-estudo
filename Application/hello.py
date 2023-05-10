@@ -9,6 +9,10 @@ def home():
 @app.route('/exit')
 def exit():
     return 'Goodbye!'
+    
+@app.route('/gratitude')
+def gratitude():
+    return "Gratidão \o/"
 
 @app.route("/", methods=["GET", "POST"])
 def response():
